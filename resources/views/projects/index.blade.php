@@ -29,7 +29,8 @@
                     <td>{{ $project->project_url }}</td>
                     <td>
                         @if($project->image)
-                            <img src="{{ asset('images/'.$project->image) }}" width="100">
+                            <img src="{{ asset('storage/' . $project->image) }}" width="100">
+
                         @endif
                     </td>
                     <td>{{ ucfirst($project->status) }}</td>
